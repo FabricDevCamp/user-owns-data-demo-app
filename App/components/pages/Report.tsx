@@ -191,9 +191,11 @@ const Report = () => {
 
     // set height of embed container relative to height of window
     const setReportContainerHeight = () => {
-        var reportContainer: HTMLElement = embedContainer.current;
-        var reportContainerTopPosition = reportType === "PaginatedReport" ? 88 : 122;
-        reportContainer.style.height = (window.innerHeight - reportContainerTopPosition - 10) + "px";
+        if (embedContainer.current != null) {
+            var reportContainer: HTMLElement = embedContainer.current;
+            var reportContainerTopPosition = reportType === "PaginatedReport" ? 88 : 122;
+            reportContainer.style.height = (window.innerHeight - reportContainerTopPosition - 10) + "px";
+        }
     };
 
     useLayoutEffect(() => {
