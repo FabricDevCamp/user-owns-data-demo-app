@@ -1,2 +1,2 @@
-# user-owns-data-demo-app
-Sample using React, TypeScript and WebPack to demonstrate User-Owns-Data embedding
+# Modern-React-For-PowerBI
+A sample SPA implementing User-Owns-Data embedding using React-JS with functional components and hooks.
